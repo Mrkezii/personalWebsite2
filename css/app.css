@@ -9,11 +9,10 @@ body {
 /******************************************************************HERO*********************************************************************************/
 
 .hero {
-    height: 500px;
-    /*    background-color: black;*/
-    color: white;
-    text-transform: uppercase;
-    background-image: url(../img/bg.jpg)no-repeat;
+    height: 100%;
+    background-image: url(../img/imac_4.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
 }
 .slogan {
     position: absolute;
@@ -22,6 +21,7 @@ body {
 }
 .slogan h1 {
     font-size: 4em;
+    text-transform: uppercase;
 }
 .orange_text {
     color: #FF2100;
