@@ -9,10 +9,11 @@ body {
 /******************************************************************HERO*********************************************************************************/
 
 .hero {
-    height: 100%;
-    background-color: black;
+    height: 500px;
+    /*    background-color: black;*/
     color: white;
     text-transform: uppercase;
+    background-image: url(../img/bg.jpg)no-repeat;
 }
 .slogan {
     position: absolute;
