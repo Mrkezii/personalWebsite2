@@ -1,7 +1,23 @@
 /******************************************************************GENERAL*********************************************************************************/
 
 body {
-  background: #293f50;
-  color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #293f50;
+    color: #888;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/******************************************************************HERO*********************************************************************************/
+
+.hero {
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+.slogan {
+    position: absolute;
+    bottom: 35%;
+}
+.slogan h1 {
+    font-size: 4em;
 }
