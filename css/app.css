@@ -17,7 +17,11 @@ body {
 .slogan {
     position: absolute;
     bottom: 35%;
+    left: 5%;
 }
 .slogan h1 {
     font-size: 4em;
+}
+.orange_text {
+    color: #FF2100;
 }
