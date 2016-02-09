@@ -27,3 +27,18 @@ body {
 }
 
 /******************************************************************DESIGN_STRIP*********************************************************************************/
+
+.design_strip {
+    height: auto;
+    color: black;
+    background-color: white;
+    width: 100%;
+}
+video #bgvid {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: url(../img/dave.jpg) no-repeat;
+    background-size: cover;
+}
