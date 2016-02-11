@@ -9,14 +9,15 @@ body {
 /******************************************************************HERO*********************************************************************************/
 
 .hero {
-    height: 100%;
+    height: 106%;
 }
 .slogan {
     position: absolute;
     bottom: 35%;
-    left: 5%;
+    right: 5%;
 }
 .slogan h1 {
+    color: white;
     font-size: 4em;
     text-transform: uppercase;
 }
@@ -25,21 +26,22 @@ body {
 }
 img {
     position: absolute;
-}
-
-/******************************************************************DESIGN_STRIP*********************************************************************************/
-
-.design_strip {
-    height: auto;
-    color: black;
-    background-color: white;
+    height: 106%;
     width: 100%;
 }
-#bgvid {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+.imagez {
     height: auto;
-    background: url(../img/dave.jpg) no-repeat;
-    background-size: cover;
+}
+
+/******************************************************************INTRO*********************************************************************************/
+
+.intro {
+    height: auto;
+    background-color: #fb816c;
+    text-align: center;
+}
+.intro p {
+    font-size: 3em;
+    color: white;
+    padding: 8% 5%;
 }
