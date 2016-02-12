@@ -2,10 +2,9 @@
 
 body {
     background: #293f50;
-    color: #888;
+    color: black;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
-    text-align: center;
 }
 
 /******************************************************************HERO*********************************************************************************/
@@ -66,4 +65,5 @@ img {
 .quote {
     height: 50%;
     background-color: #33343e;
+    padding: 8% 10%;
 }
