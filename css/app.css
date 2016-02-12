@@ -10,7 +10,7 @@ body {
 
 .hero {
     height: 106%;
-    background: #006495;
+    background: #33343e;
 }
 .slogan {
     position: absolute;
@@ -48,5 +48,9 @@ img {
 .intro p {
     font-size: 3em;
     color: white;
-    padding: 8% 5%;
+    padding: 8% 10%;
+}
+.mac {
+    height: 100%;
+    background-color: #9EFFED;
 }
