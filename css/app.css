@@ -4,12 +4,13 @@ body {
     background: #293f50;
     color: #888;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3em;
 }
 
 /******************************************************************HERO*********************************************************************************/
 
 .hero {
-    height: 106%;
+    height: 100%;
     background: #33343e;
 }
 .slogan {
@@ -31,7 +32,7 @@ body {
 
 img {
     position: absolute;
-    height: 106%;
+    height: 100%;
     width: 100%;
 }
 .imagez {
@@ -41,16 +42,19 @@ img {
 /******************************************************************INTRO*********************************************************************************/
 
 .intro {
-    height: auto;
-    background-color: #E32650;
+    height: 80%;
+    background-color: #f15d66;
     text-align: center;
 }
 .intro p {
-    font-size: 3em;
     color: white;
     padding: 8% 10%;
 }
 .mac {
     height: 100%;
-    background-color: #9EFFED;
+    background-color: white;
+}
+.quote {
+    height: 50%;
+    background-color: #33343e;
 }
