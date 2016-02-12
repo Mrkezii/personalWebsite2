@@ -10,6 +10,7 @@ body {
 
 .hero {
     height: 106%;
+    background: #006495;
 }
 .slogan {
     position: absolute;
@@ -21,9 +22,13 @@ body {
     font-size: 4em;
     text-transform: uppercase;
 }
+
+/*
 .orange_text {
     color: #FF2100;
 }
+*/
+
 img {
     position: absolute;
     height: 106%;
@@ -37,7 +42,7 @@ img {
 
 .intro {
     height: auto;
-    background-color: #fb816c;
+    background-color: #E32650;
     text-align: center;
 }
 .intro p {
