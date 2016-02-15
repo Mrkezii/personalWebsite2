@@ -68,8 +68,15 @@ p {
 /*****************************************************QUOTE****************************************************************************************/
 
 .portfolio {
-    height: 50%;
+    /*    height: 50%;*/
     background-color: #33343e;
-    padding: 8% 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     margin: auto;
+}
+.portfolio p {
+    font-size: 30px;
+}
+.text {
+    padding: 0 0 0 5%;
 }
