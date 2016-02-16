@@ -85,7 +85,3 @@ p {
     text-align: center;
     padding-bottom: 5%;
 }
-#object .slideUp {
-    /*    background-color: #fe5652;*/
-    visibility: hidden;
-}
