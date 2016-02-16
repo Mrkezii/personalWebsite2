@@ -11,41 +11,15 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <!--
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/libs/jquery-1.6.1.min.js"></script>
+-->
 </head>
 
 <body>
     <section class="hero">
-
-        <!--
-        <div class="imagez">
-            <img src="img/imac_4.svg" width="20%" style="
-    right: 24%;
-    top: 25%;
-    width: 20%;
-    z-index: 300;
-">
-            <img src="img/camera.svg" width="20%">
-            <img src="img/cd.svg" width="20%">
-            <img src="img/desk.svg" width="20%" style="
-    right: 5%;
-    top: 41%;
-    width: 59%;
-">
-            <img src="img/drawing_book.svg" width="20%">
-            <img src="img/keyboard.svg" width="20%">
-            <img src="img/book.svg" width="20%">
-            <img src="img/speaker.svg" width="20%" style="
-    right: 13%;
-    top: 42%;
-    width: 5%;
-">
-        </div>
--->
         <img src="img/my_images/char1.png">
-
-
-
-
         <div class="slogan">
             <h1>Designing the <span class="orange_text">future</span></h1></div>
     </section>
@@ -77,9 +51,9 @@
 
     <section class="portfolio">
         <h1>PORTFOLIO</h1>
-        <div class="row">
-            <div id="object" class="slideUp small-12 medium-6 large-6 columns">
-                <img src="img/my_images/dalani_imac.png">
+        <div id="example" class="row">
+            <div class=" small-12 medium-6 large-6 columns">
+                <img src="img/my_images/dalani_imac.png" id="object" class="animate slideUp">
             </div>
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
@@ -119,7 +93,57 @@
         </div>
 
     </section>
+    <script>
+        $(window).scroll(function() {
+            $('#phone').each(function() {
+                var imagePos = $(this).offset().top;
 
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+
+            $('#pin').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("hatch");
+                }
+            });
+
+            $('#pop-up-message').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideExpandUp");
+                }
+            });
+
+            $('#example-4').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $('.device-arrow').addClass("stretchRight");
+                }
+            });
+
+            $('#example-5').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $('.graph-bar').addClass("pullUp");
+                }
+            });
+
+
+        });
+
+    </script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
