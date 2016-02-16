@@ -52,8 +52,8 @@
     <section class="portfolio">
         <h1>PORTFOLIO</h1>
         <div id="example" class="row">
-            <div class=" small-12 medium-6 large-6 columns">
-                <img src="img/my_images/dalani_imac.png" id="object" class="animate slideUp">
+            <div class=" wow bounceInLeft small-12 medium-6 large-6 columns">
+                <img src="img/my_images/dalani_imac.png">
             </div>
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
@@ -66,14 +66,14 @@
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
             </div>
-            <div class="small-12 medium-6 large-6 columns">
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns">
                 <img src="img/my_images/furi.png">
             </div>
         </div>
         <div class="row" style="
     padding-top: 13%;
 ">
-            <div class="small-12 medium-6 large-6 columns">
+            <div class="wow bounceInLeft small-12 medium-6 large-6 columns">
                 <img src="img/my_images/styles_ipad_Horizontal.png">
             </div>
             <div class="small-12 medium-6 large-6 columns text">
@@ -87,63 +87,33 @@
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
             </div>
-            <div class="small-12 medium-6 large-6 columns">
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns">
                 <img src="img/my_images/Gnome.png">
             </div>
         </div>
 
     </section>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+    <!--
     <script>
         $(window).scroll(function() {
-            $('#phone').each(function() {
+            $('#object').each(function() {
                 var imagePos = $(this).offset().top;
 
                 var topOfWindow = $(window).scrollTop();
                 if (imagePos < topOfWindow + 400) {
-                    $(this).addClass("slideUp");
+                    $(this).addClass("slideRight");
                 }
             });
-
-            $('#pin').each(function() {
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow + 400) {
-                    $(this).addClass("hatch");
-                }
-            });
-
-            $('#pop-up-message').each(function() {
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow + 400) {
-                    $(this).addClass("slideExpandUp");
-                }
-            });
-
-            $('#example-4').each(function() {
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow + 400) {
-                    $('.device-arrow').addClass("stretchRight");
-                }
-            });
-
-            $('#example-5').each(function() {
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow + 400) {
-                    $('.graph-bar').addClass("pullUp");
-                }
-            });
-
-
         });
 
     </script>
+-->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
