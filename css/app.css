@@ -80,3 +80,8 @@ p {
 .text {
     padding: 0 0 0 5%;
 }
+.portfolio h1 {
+    /*    font-size: 1.5em;*/
+    text-align: center;
+    padding-bottom: 5%;
+}
