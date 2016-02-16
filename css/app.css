@@ -1,7 +1,7 @@
 /******************************************************************GENERAL*********************************************************************************/
 
 body {
-    background: #293f50;
+    background: #27292e;
     color: black;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
@@ -11,7 +11,7 @@ body {
 
 .hero {
     height: 100%;
-    background: #33343e;
+    background: #27292e;
 }
 .slogan {
     position: absolute;
@@ -69,7 +69,7 @@ p {
 
 .portfolio {
     /*    height: 50%;*/
-    background-color: #33343e;
+    background-color: #27292e;
     padding-top: 8%;
     padding-bottom: 8%;
     margin: auto;
