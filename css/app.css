@@ -72,7 +72,7 @@ p {
     background-color: #27292e;
     padding-top: 8%;
     padding-bottom: 8%;
-    margin: auto;
+    /*    ÷ margin: auto;*/
 }
 .portfolio p {
     font-size: 30px;
