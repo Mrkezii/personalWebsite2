@@ -85,3 +85,25 @@ p {
     text-align: center;
     padding-bottom: 5%;
 }
+@keyframes slidy {
+    0%,
+    15% {
+        left: 0
+    }
+    20%,
+    40% {
+        left: -100%
+    }
+    45%,
+    65% {
+        left: -200%
+    }
+    70%,
+    85% {
+        left: -300%
+    }
+    100%,
+    90% {
+        left: -400%
+    }
+}
