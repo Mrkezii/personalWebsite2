@@ -1,7 +1,7 @@
 /******************************************************************GENERAL*********************************************************************************/
 
 body {
-    background: #27292e;
+    background: #fff;
     color: black;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
@@ -69,7 +69,7 @@ p {
 
 .portfolio {
     /*    height: 50%;*/
-    background-color: #27292e;
+    background-color: #fff;
     padding-top: 8%;
     padding-bottom: 8%;
     /*    ÷ margin: auto;*/
@@ -84,6 +84,9 @@ p {
     /*    font-size: 1.5em;*/
     text-align: center;
     padding-bottom: 5%;
+}
+hr {
+    background-color: white;
 }
 @keyframes slidy {
     0%,
