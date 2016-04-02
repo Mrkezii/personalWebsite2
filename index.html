@@ -19,9 +19,10 @@
 
 <body>
     <section class="hero">
-        <img src="img/my_images/char1.png">
+        <img class="myimg" src="img/my_images/char12.png">
         <div class="slogan">
-            <h1>Designing the <span class="orange_text">future</span></h1></div>
+            <h1 class="desktopp">Designing the <span class="orange_text">future</span></h1>
+            <h1 class="mobile">Designing <br>the <br><span class="orange_text">future</span></h1></div>
     </section>
 
 
@@ -31,24 +32,9 @@
     </section>
 
 
-
-    <section class="skills">
-        <h1>Skills</h1>
-        <div class="row small-up-1 medium-up-2 large-up-4 ">
-            <div class="column">
-                <img src="img/png/html5.png" alt="">
-                <h3>HTML</h3>
-            </div>
-            <div class="column">
-                <img src="img/png/css3.png" alt="">
-            </div>
-            <div class="column">
-                <img src="img/png/javascript.png" alt="">
-            </div>
-        </div>
-
-    </section>
-    <hr>
+<!--
+<hr style="margin: 0 5%;height:2px;border:none;color:#333;background-color:#333;">
+-->
 
     <section class="portfolio">
         <h1>PORTFOLIO</h1>
@@ -63,11 +49,17 @@
         <div class="row" style="
     padding-top: 13%;
 ">
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns xoxo">
+                <a href="delani-kezidavid.bitballoon.com">
+                    <img src="img/my_images/furi.png"></a>
+            </div>
 
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
             </div>
-            <div class="wow bounceInRight small-12 medium-6 large-6 columns">
+
+
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns xoxo2">
                 <img src="img/my_images/furi.png">
             </div>
         </div>
@@ -84,15 +76,71 @@
         <div class="row" style="
     padding-top: 13%;
 ">
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns xoxo">
+                <img src="img/my_images/Gnome.png">
+            </div>
 
             <div class="small-12 medium-6 large-6 columns text">
                 <p>My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.My name is David Kezi, i design and develop beautiful web and mobile applications that people love.</p>
             </div>
-            <div class="wow bounceInRight small-12 medium-6 large-6 columns">
+            <div class="wow bounceInRight small-12 medium-6 large-6 columns xoxo2">
                 <img src="img/my_images/Gnome.png">
             </div>
         </div>
 
+    </section>
+
+
+
+    <section>
+
+        <footer class="footer">
+            <div class="row">
+                <div class="small-12 medium-6 medium-push-6 columns" style="
+    margin-top: 6%;
+">
+                    <p class="logo show-for-small-only"><i class="fi-target"></i> Kezi David</p>
+                    <form class="footer-form">
+                        <div class="row">
+                            <div class="medium-9 medium-push-3 columns">
+                                <label>
+                                    <label for="email" class="contact">Contact Me</label>
+                                    <input type="email" id="email" placeholder="Email Address" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-9 medium-push-3 columns">
+                                <label>
+                                    <textarea rows="5" id="message" placeholder="Message"></textarea>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="medium-9 medium-push-3 columns">
+                                    <button class="submit" type="submit" value="Submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="small-12 medium-6 medium-pull-6 columns">
+                    <p class="logo hide-for-small-only"><i class="fi-target"></i> KEZI DAVID</p>
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <ul class="inline-list social">
+                        <a href="#"><i class="fi-social-facebook"></i></a>
+                        <a href="#"><i class="fi-social-twitter"></i></a>
+                        <a href="#"><i class="fi-social-linkedin"></i></a>
+                        <a href="#"><i class="fi-social-github"></i></a>
+                    </ul>
+                    <p class="copywrite"> ©2015 HAND CODED AND DESIGNED BY DAVID KEZI</p>
+                </div>
+            </div>
+        </footer>
     </section>
     <script src="js/wow.min.js"></script>
     <script>
@@ -105,6 +153,57 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        $(window).scroll(function() {
+            $('#phone').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+
+            $('#pin').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("hatch");
+                }
+            });
+
+            $('#pop-up-message').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideExpandUp");
+                }
+            });
+
+            $('#example-4').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $('.device-arrow').addClass("stretchRight");
+                }
+            });
+
+            $('#example-5').each(function() {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $('.graph-bar').addClass("pullUp");
+                }
+            });
+
+
+        });
+
+    </script>
 </body>
 
 </html>
