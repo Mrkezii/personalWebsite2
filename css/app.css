@@ -6,6 +6,9 @@ body {
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
 }
+h1 {
+    font-size: 5rem;
+}
 
 /******************************************************************HERO*********************************************************************************/
 
@@ -33,10 +36,15 @@ body {
 .hero img {
     position: absolute;
     height: 100%;
-    width: 100%;
 }
 .imagez {
     height: auto;
+}
+span {
+    color: #f15d66;
+}
+.mobile {
+    display: none;
 }
 
 /******************************************************************INTRO*********************************************************************************/
@@ -61,8 +69,11 @@ p {
     padding: 8% 5%;
 }
 .skills .column img {
-    height: 10%;
-    width: 10%;
+    height: 100px;
+    width: 100px;
+}
+.skills h3 {
+    font-size: 20px;
 }
 
 /*****************************************************QUOTE****************************************************************************************/
@@ -83,10 +94,50 @@ p {
 .portfolio h1 {
     /*    font-size: 1.5em;*/
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 hr {
     background-color: white;
+    height: 10px;
+}
+.xoxo {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .xoxo {
+        display: block;
+    }
+    .xoxo2 {
+        display: none;
+    }
+    .hero img {
+        position: absolute;
+        height: 100%;
+        width: 65%;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktopp {
+        display: none;
+        font-size: 1em;
+    }
+    .slogan h1 {
+        font-size: 1em;
+    }
+    .slogan {
+        position: absolute;
+        bottom: 50%;
+        right: 5%;
+    }
+    .intro p {
+        font-size: 28px;
+        color: white;
+        padding: 8% 10%;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
 }
 @keyframes slidy {
     0%,
@@ -109,4 +160,107 @@ hr {
     90% {
         left: -400%
     }
+}
+
+/************************************************************FOOTER******************************************************************************/
+
+@charset "UTF-8";
+.row {
+    max-width: 1200px;
+}
+.footer {
+    background-color: #292c2f;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.footer .social a {
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    /*    background-color: #33383b;*/
+    border-radius: 2px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 3px 0 0;
+}
+.footer .copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 1rem 0 1rem 0;
+}
+.footer .footer-form textarea,
+.footer .footer-form input {
+    border-radius: 3px;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #d1d2d2;
+    padding: 1.3rem;
+}
+.footer .footer-form label {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    /*    font-weight: bold; */
+}
+.footer .footer-form .submit {
+    border-radius: 3px;
+    background-color: #27292e;
+    color: #ffffff;
+    border: 0;
+    padding: 1rem 3.5rem;
+    font-weight: bold;
+    float: right;
+    margin: 0 1rem 2rem 0;
+}
+.footer .footer-links a {
+    list-style: none;
+    font-weight: normal;
+    color: #fff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.footer .footer-links a::after {
+    content: "•";
+    padding: 0 0.2rem 0 0.4rem;
+}
+.footer .footer-links a:last-child::after {
+    content: "";
+    padding: 0 0.4rem 0 0.8rem;
+}
+@media only screen and (min-width: 40.063em) {
+    .footer {
+        padding: 4rem;
+    }
+    .footer p {
+        text-align: left;
+    }
+    .footer .social {
+        text-align: left;
+        margin: 0;
+    }
+    .footer .footer-form .contact {
+        position: absolute;
+        left: 5%;
+        top: -90%;
+    }
+}
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    ;
+}
+.logo i {
+    margin-right: 0.5rem;
+}
+.footer .social a:hover {
+    color: red;
 }
