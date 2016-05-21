@@ -14,7 +14,7 @@ h1 {
 
 .hero {
     height: 100%;
-    /*    background: #27292e;*/
+/*        background: #27292e;*/
 }
 .slogan {
     position: absolute;
@@ -22,7 +22,7 @@ h1 {
     right: 5%;
 }
 .slogan h1 {
-    /*    color: white;*/
+/*        color: white;*/
     color: black;
     font-size: 1.5em;
     text-transform: uppercase;
