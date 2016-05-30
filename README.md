@@ -1,2 +1,6 @@
-# peronalWebsite2
-i’m on the quest to making a new website for myself because i dont like my existing one
+# peronalWebsite
+This is my personal website created using;
+* HTML, CSS and JavaScript.
+* Foundation Zurb Framework.
+* JQuery
+* ScrollMe Jquery plug-in
