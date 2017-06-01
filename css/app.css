@@ -167,6 +167,9 @@ hr {
 
 /************************************************************FOOTER******************************************************************************/
 
+.fa:hover{
+    color: darkgrey;
+}
 .try {
     margin-top: 5%;
 }
@@ -186,7 +189,7 @@ hr {
     height: 2rem;
     /*    background-color: #33383b;*/
     border-radius: 2px;
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
     color: #fff;
     text-align: center;
     line-height: 2rem;
@@ -196,6 +199,7 @@ hr {
     color: #8f9296;
     font-size: 0.875rem;
     margin: 1rem 0 1rem 0;
+    padding:5%;
 }
 .footer .footer-form textarea,
 .footer .footer-form input {
@@ -230,7 +234,7 @@ hr {
     list-style: none;
     font-weight: normal;
     color: #fff;
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 2rem 5%;
     margin: 0;
     font-size: 1.5rem;
 }
@@ -242,10 +246,25 @@ hr {
     content: "";
     padding: 0 0.4rem 0 0.8rem;
 }
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 5%;
+    color: white;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
 @media only screen and (min-width: 40.063em) {
-    .footer {
-        padding: 4rem;
-    }
+
+
+    /*.footer {*/
+        /*padding: 4rem;*/
+    /*}*/
     .footer p {
         text-align: left;
     }
