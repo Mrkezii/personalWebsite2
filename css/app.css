@@ -1,291 +1,63 @@
-/******************************************************************GENERAL*********************************************************************************/
-
-body {
-    background: #fff;
-    color: black;
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3em;
+body{background:#fff;color:black;font:300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:3em;}
+h1{font-size:5rem;}
+.hero{height:100%;background:white;display:flex;justify-content:center;}
+.slogan{position:absolute;bottom:45%;right:5%;}
+.slogan h1{color:white;font-size:1.5em;text-transform:uppercase;}
+.hero img{position:absolute;height:90%;bottom:0;}
+.imagez{height:auto;}
+span{color:#f15d66;}
+.mobile{display:none;}
+.intro{background-color:#e6e6e6;text-align:center;}
+.intro p{color:black;padding:8% 10%;}
+p{margin-bottom:0;}
+.skills{background-color:white;text-align:center;padding:8% 5%;}
+.skills .column img{height:100px;width:100px;}
+.skills h3{font-size:20px;}
+.portfolio{background-color:#fff;padding-top:8%;padding-bottom:8%;}
+.portfolio p{font-size:28px;}
+.text{padding:0 0 0 5%;}
+.portfolio h1{text-align:center;padding-bottom:10%;}
+hr{background-color:white;height:10px;}
+.xoxo{display:none;}
+@media screen and (max-width:700px){.xoxo{display:block;}
+.xoxo2{display:none;}
+.hero img{position:absolute;height:60%;width:100%;}
+.mobile{display:block;}
+.desktopp{display:none;font-size:1em;}
+.slogan h1{font-size:1em;}
+.slogan{position:absolute;bottom:50%;right:5%;}
+.intro p{font-size:28px;padding:8% 10%;}
+h1{font-size:3.5rem;}
 }
-h1 {
-    font-size: 5rem;
+@keyframes slidy{0%,
+15%{left:0}
+20%,
+40%{left:-100%}
+45%,
+65%{left:-200%}
+70%,
+85%{left:-300%}
+100%,
+90%{left:-400%}
 }
-
-/******************************************************************HERO*********************************************************************************/
-
-.hero {
-    height: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-}
-.slogan {
-    position: absolute;
-    bottom: 45%;
-    right: 5%;
-}
-.slogan h1 {
-        color: white;
-/*    color: black;*/
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
-/*
-.orange_text {
-    color: #FF2100;
-}
-*/
-
-.hero img {
-    position: absolute;
-    height: 90%;
-    bottom: 0;
-}
-.imagez {
-    height: auto;
-}
-span {
-    color: #f15d66;
-}
-.mobile {
-    display: none;
-}
-
-/******************************************************************INTRO*********************************************************************************/
-
-.intro {
-    background-color: #e6e6e6;
-    text-align: center;
-}
-.intro p {
-    color: black;
-    padding: 8% 10%;
-}
-p {
-    margin-bottom: 0;
-}
-
-/***************************************************SKILLS*****************************************************************************************/
-
-.skills {
-    background-color: white;
-    text-align: center;
-    padding: 8% 5%;
-}
-.skills .column img {
-    height: 100px;
-    width: 100px;
-}
-.skills h3 {
-    font-size: 20px;
-}
-
-/*****************************************************QUOTE****************************************************************************************/
-
-.portfolio {
-    /*    height: 50%;*/
-    background-color: #fff;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    /*    ÷ margin: auto;*/
-}
-.portfolio p {
-    font-size: 28px;
-}
-.text {
-    padding: 0 0 0 5%;
-}
-.portfolio h1 {
-    /*    font-size: 1.5em;*/
-    text-align: center;
-    padding-bottom: 10%;
-}
-hr {
-    background-color: white;
-    height: 10px;
-}
-.xoxo {
-    display: none;
-}
-@media screen and (max-width: 700px) {
-    .xoxo {
-        display: block;
-    }
-    .xoxo2 {
-        display: none;
-    }
-    .hero img {
-        position: absolute;
-        height: 60%;
-        width: 100%;
-    }
-    .mobile {
-        display: block;
-    }
-    .desktopp {
-        display: none;
-        font-size: 1em;
-    }
-    .slogan h1 {
-        font-size: 1em;
-    }
-    .slogan {
-        position: absolute;
-        bottom: 50%;
-        right: 5%;
-    }
-    .intro p {
-        font-size: 28px;
-        padding: 8% 10%;
-    }
-    h1 {
-        font-size: 3.5rem;
-    }
-}
-@keyframes slidy {
-    0%,
-    15% {
-        left: 0
-    }
-    20%,
-    40% {
-        left: -100%
-    }
-    45%,
-    65% {
-        left: -200%
-    }
-    70%,
-    85% {
-        left: -300%
-    }
-    100%,
-    90% {
-        left: -400%
-    }
-}
-
-/************************************************************FOOTER******************************************************************************/
-
-.fa:hover{
-    color: darkgrey;
-}
-.try {
-    margin-top: 5%;
-}
-@charset "UTF-8";
-.row {
-    max-width: 1200px;
-}
-.footer {
-    background-color: #292c2f;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 1rem;
-}
-.footer .social a {
-    display: inline-block;
-    width: 3rem;
-    height: 2rem;
-    /*    background-color: #33383b;*/
-    border-radius: 2px;
-    /*font-size: 2.5rem;*/
-    color: #fff;
-    text-align: center;
-    line-height: 2rem;
-    margin: 0 3px 0 0;
-}
-.footer .copywrite {
-    color: #8f9296;
-    font-size: 0.875rem;
-    margin: 1rem 0 1rem 0;
-    padding:5%;
-}
+.fa:hover{color:darkgrey;}
+.try{margin-top:5%;margin-bottom:5%;}
+@charset "UTF-8";.row{max-width:1200px;}
+.footer{background-color:#292c2f;text-align:center;font-size:1.2rem;padding:1rem;}
+.footer .social a{display:inline-block;width:3rem;height:2rem;border-radius:2px;color:#fff;text-align:center;line-height:2rem;margin:0 3px 0 0;}
+.footer .copywrite{color:#8f9296;font-size:0.875rem;margin:1rem 0 1rem 0;padding:5%;}
 .footer .footer-form textarea,
-.footer .footer-form input {
-    border-radius: 3px;
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    font: inherit;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #d1d2d2;
-    padding: 1.3rem;
+.footer .footer-form input{border-radius:3px;background-color:#1f2022;box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.1);border:none;resize:none;font:inherit;font-size:0.875rem;font-weight:normal;color:#d1d2d2;padding:1.3rem;}
+.footer .footer-form label{color:#fff;font-size:1.5rem;margin:0 0 1rem 0;}
+.footer .footer-form .submit{border-radius:3px;background-color:#27292e;color:#ffffff;border:0;padding:1rem 3.5rem;font-weight:bold;float:right;margin:0 1rem 2rem 0;}
+.footer .footer-links a{list-style:none;font-weight:normal;color:#fff;padding:3rem 0 2rem 5%;margin:0;font-size:1.5rem;}
+.footer .footer-links a::after{content:"•";padding:0 0.2rem 0 0.4rem;}
+.footer .footer-links a:last-child::after{content:"";padding:0 0.4rem 0 0.8rem;}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;padding:5%;color:white;-moz-osx-font-smoothing:grayscale;}
+@media only screen and (min-width:40.063em){.footer p{text-align:left;}
+.footer .social{text-align:left;margin:0;}
+.footer .footer-form .contact{position:absolute;left:5%;top:-90%;}
 }
-.footer .footer-form label {
-    color: #fff;
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
-    /*    font-weight: bold; */
-}
-.footer .footer-form .submit {
-    border-radius: 3px;
-    background-color: #27292e;
-    color: #ffffff;
-    border: 0;
-    padding: 1rem 3.5rem;
-    font-weight: bold;
-    float: right;
-    margin: 0 1rem 2rem 0;
-}
-.footer .footer-links a {
-    list-style: none;
-    font-weight: normal;
-    color: #fff;
-    padding: 3rem 0 2rem 5%;
-    margin: 0;
-    font-size: 1.5rem;
-}
-.footer .footer-links a::after {
-    content: "•";
-    padding: 0 0.2rem 0 0.4rem;
-}
-.footer .footer-links a:last-child::after {
-    content: "";
-    padding: 0 0.4rem 0 0.8rem;
-}
-.fa{
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    padding: 5%;
-    color: white;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-@media only screen and (min-width: 40.063em) {
-
-
-    /*.footer {*/
-        /*padding: 4rem;*/
-    /*}*/
-    .footer p {
-        text-align: left;
-    }
-    .footer .social {
-        text-align: left;
-        margin: 0;
-    }
-    .footer .footer-form .contact {
-        position: absolute;
-        left: 5%;
-        top: -90%;
-    }
-}
-.logo {
-    color: #fff;
-    font-size: 2rem;
-    ;
-}
-.logo i {
-    margin-right: 0.5rem;
-}
-.footer .social a:hover {
-    color: red;
-}
+.logo{color:#fff;font-size:2rem;;}
+.logo i{margin-right:0.5rem;}
+.footer .social a:hover{color:red;}
